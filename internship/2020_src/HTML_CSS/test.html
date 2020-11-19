@@ -14,16 +14,13 @@
 			<h1>課題１</h1>
 			<h3>プログラム言語の人気ランキング、おすすめIDEの表を作成する</h3>
 
-			<TABLE BORDER="0" cellspacing="30">
-			<TR>
-			<TD>
-				<table border="1" height="100" width="500" cellspacing="0" cellpadding="5" bordercolor="gray">
-					<tr style="color:green;">
-						<th bgcolor="lightgreen">順位</th>
-						<th bgcolor="lightgreen">言語</th>
-						<th bgcolor="lightgreen">シェア</th>
-						<th bgcolor="lightgreen">公式ドキュメント</th>
-						<th bgcolor="lightgreen">ロゴ</th>
+				<table border="1">
+					<tr>
+						<th>順位</th>
+						<th>言語</th>
+						<th>シェア</th>
+						<th>公式ドキュメント</th>
+						<th>ロゴ</th>
 					</tr>
 					<tr>
 						<td><p class="right">1</p></td>
@@ -61,13 +58,12 @@
 						<td><p class="center"><img src="img/php_icon.png" width="48" height="48"></p></td>
 					</tr>
 				</table>
-			</TD>
-			<TD>
-				<table border="1" height="100" width="650" cellspacing="0" cellpadding="5" bordercolor="gray">
-					<tr style="color:green;">
-						<th bgcolor="lightgreen">No</th>
-						<th bgcolor="lightgreen">名前</th>
-						<th bgcolor="lightgreen">おすすめポイント</th>
+
+				<table border="1">
+					<tr>
+						<th>No</th>
+						<th>名前</th>
+						<th>おすすめポイント</th>
 					</tr>
 					<tr>
 						<td><p class="right">1</p></td>
@@ -93,24 +89,33 @@
 						様々な現場で使用されている</td>
 					</tr>
 				</table>
-			</TD>
-			</TR>
-			</TABLE>
+
 		</section>
 
 		<section>
 			<h1>課題２</h1>
 			<h3>問い合わせフォームを作成する</h3>
-				<table border="1" cellspacing="0" cellpadding="50" bordercolor="gray" align="center">
-				<th>
-					<form action="/cgi-bin/FormMail.cgi" method="post">
-						<p class="center">Name:<input type="text" required="required" placeholder="Your Name" size="80"></p>
-						<p class="center">E-mail:<input type="email" required="required" placeholder="Sample@xxx.com" size="80"></p>
-						<p class="center">Message:<textarea placeholder="Please enter your question" rows="10" cols="80"></textarea></p>
-						<p class="center"><input type="submit" value="Submit" class="button"></p>
-					</form>
-				</th>
-				</table>
+				<form method="post">
+					<div class="center border">
+						<table class="center">
+							<tr>
+								<td class="right">Name:</td>
+								<td class="left"><input type="text" required="required" placeholder="Your Name" size="80"></td>
+							</tr>
+							<tr>
+								<td class="right">E-mail:</td>
+								<td class="left"><input type="email" required="required" placeholder="Sample@xxx.com" size="80"></td>
+							</tr>
+							<tr>
+								<td class="right">Message:</td>
+								<td class="left"><textarea placeholder="Please enter your question" rows="10" cols="82"></textarea></td>
+							</tr>
+						</table>
+							<div>
+							<input type="submit" value="Submit" class="button">
+							</div>
+					</div>
+				</form>
 		</section>
 
 	</body>
